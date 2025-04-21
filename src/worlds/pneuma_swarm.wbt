@@ -1,0 +1,1861 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BrushedAluminium.proto"
+
+WorldInfo {
+  FPS 10
+}
+Viewpoint {
+  orientation -0.3352889457766007 -0.13425979359604268 0.9324996679160609 3.8563287183016572
+  position 4.21120006368588 4.011405515187944 3.546963007715167
+  exposure 0.3
+  follow "swarm robot(4)"
+  followType "Pan and Tilt Shot"
+  ambientOcclusionRadius 100
+  bloomThreshold 100000
+}
+Solid {
+  translation -2.0314 0.120431 0.03
+  rotation 0 0 1 -2.6179953071795863
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../../../Downloads/body_.obj"
+        ]
+      }
+    }
+  ]
+  name "victim"
+  recognitionColors [
+    1 0 0
+  ]
+}
+Solid {
+  translation -1.73669 1.92578 0.03
+  rotation 0 0 1 2.61799
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../../../Downloads/body_.obj"
+        ]
+      }
+    }
+  ]
+  name "victim(2)"
+  recognitionColors [
+    1 0 0
+  ]
+}
+Solid {
+  translation 0.236666 -1.33653 0.03
+  rotation 0 0 -1 1.309
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../../../Downloads/body_.obj"
+        ]
+      }
+    }
+  ]
+  name "victim(1)"
+  recognitionColors [
+    1 0 0
+  ]
+}
+Wall {
+  translation -0.9 -1.5 0.02
+  name "wall(1)"
+  size 0.2 2 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation -1.81 0.62 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(7)"
+  size 0.2 1.5 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation -1.17 1.02 0
+  rotation 0 0 1 3.14159
+  name "wall(8)"
+  size 0.2 1 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation -1.17 1.02 0
+  rotation 0 0 1 3.14159
+  name "wall(6)"
+  size 0.2 1 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation -0.28 2.34 0
+  rotation 0 0 1 3.14159
+  name "wall(11)"
+  size 0.2 0.5 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation -0.28 1.61 0
+  rotation 0 0 1 3.14159
+  name "wall(9)"
+  size 0.2 1 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation 0.78 -0.01 0
+  rotation 0 0 1 3.14159
+  name "wall(10)"
+  size 0.2 1 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation 0.79 -1.5 0
+  name "wall(2)"
+  size 0.2 2 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation 0.68 -0.61 0
+  rotation 0 0 1 1.5708
+  name "wall(3)"
+  size 0.2 1 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation -2.01 -0.610008 0
+  rotation 0 0 1 1.5708
+  name "wall(5)"
+  size 0.2 1 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation -1.19 -0.610006 0
+  rotation 0 0 1 1.5708
+  name "wall(12)"
+  size 0.2 0.8 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation 2.31 -0.609993 0
+  rotation 0 0 1 1.5708
+  name "wall(13)"
+  size 0.2 0.5 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation 1.83 -0.609993 0
+  rotation 0 0 1 1.5708
+  name "wall(14)"
+  size 0.2 0.5 0.5
+  appearance BrushedAluminium {
+  }
+}
+Wall {
+  translation 1.1 -0.61 0
+  rotation 0 0 1 1.5708
+  name "wall(4)"
+  size 0.2 1 0.5
+  appearance BrushedAluminium {
+  }
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+RectangleArena {
+  floorSize 5 5
+  floorTileSize 0.4 0.4
+  floorAppearance Appearance {
+    texture ImageTexture {
+      url [
+        "../../../Downloads/Untitled design (5).png"
+      ]
+    }
+  }
+  wallThickness 0.1
+  wallHeight 0.5
+}
+Robot {
+  translation 1.4473722364703614 1.6482087093216817 0.021859073929302544
+  rotation -0.013659574816963182 0.000841785305595554 0.9999063493214346 3.0183658251557697
+  children [
+    Pen {
+      inkColor 0 1 0
+      inkDensity 1
+    }
+    Camera {
+      translation 0.02 0 0.04
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.5 0 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.01
+          }
+        }
+      ]
+      fieldOfView 1
+      width 640
+      height 320
+      recognition Recognition {
+        maxRange 0.6
+      }
+    }
+    LED {
+      translation -0.01 0 0.04
+      children [
+        PointLight {
+          attenuation 0 0 0.3
+          color 1 0.7 0
+          intensity 0.1
+          on FALSE
+          radius 0.1
+        }
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      color [
+        1 1 1
+        0 1 0
+        1 0.7 0
+        0 1 1
+        0.6 0 1
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 -0.04 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds1"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    DistanceSensor {
+      translation 0.039 -0.027 0
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds3"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.04 0.0224265 0
+      rotation 0 0 1 0.785401
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds4"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 0.04 0
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds2"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    Receiver {
+    }
+    Emitter {
+    }
+    Display {
+      width 100
+      height 100
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+    }
+    Lidar {
+      translation 0 0 0.03
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.7 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.03
+            subdivision 6
+          }
+        }
+      ]
+      fieldOfView 6.28
+      verticalFieldOfView 0.05
+      numberOfLayers 1
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50687.196084592666
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_l"
+        }
+      ]
+      endPoint DEF WHEEL_L Solid {
+        translation 3.6365078486695404e-08 0.05499999999998482 1.7561206725027018e-07
+        rotation -0.8766995323763019 -0.34014524585691436 0.34014576530086776 4.581172204279843
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 59192.99764599377
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_r"
+        }
+      ]
+      endPoint DEF WHEEL_R Solid {
+        translation 0 -0.055 0
+        rotation -0.8286852210887676 0.3957774965837279 -0.3957789503586283 4.525566743958447
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.041
+        radius 0.05
+        subdivision 8
+      }
+      castShadows FALSE
+    }
+  ]
+  name "swarm robot(10)"
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "pneuma_controller"
+}
+Robot {
+  translation 1.6638623202016203 1.7676841411606081 0.0216762610707878
+  rotation 0.016421144330425613 -0.0006673054730946475 0.9998649412407081 -2.875840547353737
+  children [
+    Pen {
+      inkColor 0 1 0
+      inkDensity 1
+    }
+    Camera {
+      translation 0.02 0 0.04
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.5 0 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.01
+          }
+        }
+      ]
+      fieldOfView 1
+      width 640
+      height 320
+      recognition Recognition {
+        maxRange 0.6
+      }
+    }
+    LED {
+      translation -0.01 0 0.04
+      children [
+        PointLight {
+          attenuation 0 0 0.3
+          color 0.6 0 1
+          intensity 0.1
+          on FALSE
+          radius 0.1
+        }
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      color [
+        1 1 1
+        0 1 0
+        1 0.7 0
+        0 1 1
+        0.6 0 1
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 -0.04 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds1"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    DistanceSensor {
+      translation 0.039 -0.027 0
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds3"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.04 0.0224265 0
+      rotation 0 0 1 0.785401
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds4"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 0.04 0
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds2"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    Receiver {
+    }
+    Emitter {
+    }
+    Display {
+      width 100
+      height 100
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+    }
+    Lidar {
+      translation 0 0 0.03
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.7 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.03
+            subdivision 6
+          }
+        }
+      ]
+      fieldOfView 6.28
+      verticalFieldOfView 0.05
+      numberOfLayers 1
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50682.059893822734
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_l"
+        }
+      ]
+      endPoint DEF WHEEL_L Solid {
+        translation 1.750304111260996e-07 0.05499999999998529 3.906881465165825e-08
+        rotation 0.45611169004052643 0.6292692965402582 -0.6292712281998147 2.2857467518561077
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 59192.77185557156
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_r"
+        }
+      ]
+      endPoint DEF WHEEL_R Solid {
+        translation 0 -0.055 0
+        rotation -0.7493698843877462 0.46821104529631574 -0.4682127651348552 4.427784553774972
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.041
+        radius 0.05
+        subdivision 8
+      }
+      castShadows FALSE
+    }
+  ]
+  name "swarm robot(1)"
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "pneuma_controller"
+}
+Robot {
+  translation 1.6546537042629503 1.4760833558023405 0.02185918508793716
+  rotation -0.0001189489932128519 7.767241122972338e-06 0.9999999928954034 3.0182291668719956
+  children [
+    Pen {
+      inkColor 0 1 0
+      inkDensity 1
+    }
+    Camera {
+      translation 0.02 0 0.04
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.5 0 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.01
+          }
+        }
+      ]
+      fieldOfView 1
+      width 640
+      height 320
+      recognition Recognition {
+        maxRange 0.6
+      }
+    }
+    LED {
+      translation -0.01 0 0.04
+      children [
+        PointLight {
+          attenuation 0 0 0.3
+          color 0.6 0 1
+          intensity 0.1
+          on FALSE
+          radius 0.1
+        }
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      color [
+        1 1 1
+        0 1 0
+        1 0.7 0
+        0 1 1
+        0.6 0 1
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 -0.04 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds1"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    DistanceSensor {
+      translation 0.039 -0.027 0
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds3"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.04 0.0224265 0
+      rotation 0 0 1 0.785401
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds4"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 0.04 0
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds2"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    Receiver {
+    }
+    Emitter {
+    }
+    Display {
+      width 100
+      height 100
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+    }
+    Lidar {
+      translation 0 0 0.03
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.7 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.03
+            subdivision 6
+          }
+        }
+      ]
+      fieldOfView 6.28
+      verticalFieldOfView 0.05
+      numberOfLayers 1
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50689.08094935702
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_l"
+        }
+      ]
+      endPoint DEF WHEEL_L Solid {
+        translation 1.5578764326592297e-07 0.05499999999998482 -8.883820857551368e-08
+        rotation -0.183612392735464 -0.6950838627100183 0.6950862630163813 3.504769720806648
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 59194.88251075132
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_r"
+        }
+      ]
+      endPoint DEF WHEEL_R Solid {
+        translation 0 -0.055 0
+        rotation -0.7935392804996655 -0.43028714257689027 0.4302887231116896 4.483167166339687
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.041
+        radius 0.05
+        subdivision 8
+      }
+      castShadows FALSE
+    }
+  ]
+  name "swarm robot(2)"
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "pneuma_controller"
+}
+Robot {
+  translation 1.8055284997854482 1.268641139027589 0.019650522971865095
+  rotation 0.0021045992253628802 -0.021347194593611115 0.9997699075012626 -2.3806080397550224
+  children [
+    Pen {
+      inkColor 0 1 0
+      inkDensity 1
+    }
+    Camera {
+      translation 0.02 0 0.04
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.5 0 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.01
+          }
+        }
+      ]
+      fieldOfView 1
+      width 640
+      height 320
+      recognition Recognition {
+        maxRange 0.6
+      }
+    }
+    LED {
+      translation -0.01 0 0.04
+      children [
+        PointLight {
+          attenuation 0 0 0.3
+          color 0.6 0 1
+          intensity 0.1
+          on FALSE
+          radius 0.1
+        }
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      color [
+        1 1 1
+        0 1 0
+        1 0.7 0
+        0 1 1
+        0.6 0 1
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 -0.04 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds1"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    DistanceSensor {
+      translation 0.039 -0.027 0
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds3"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.04 0.0224265 0
+      rotation 0 0 1 0.785401
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds4"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 0.04 0
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds2"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    Receiver {
+    }
+    Emitter {
+    }
+    Display {
+      width 100
+      height 100
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+    }
+    Lidar {
+      translation 0 0 0.03
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.7 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.03
+            subdivision 6
+          }
+        }
+      ]
+      fieldOfView 6.28
+      verticalFieldOfView 0.05
+      numberOfLayers 1
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50680.74726411174
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_l"
+        }
+      ]
+      endPoint DEF WHEEL_L Solid {
+        translation 6.91266496239443e-09 0.05499999999998529 1.7920444235669723e-07
+        rotation 0.9226903155355454 0.27261919825562664 -0.2726194313679329 1.6511751748008574
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 59190.55828902332
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_r"
+        }
+      ]
+      endPoint DEF WHEEL_R Solid {
+        translation 0 -0.055 0
+        rotation 0.0668349140191424 0.7055244281638284 -0.7055270197038216 3.0081218128052076
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.041
+        radius 0.05
+        subdivision 8
+      }
+      castShadows FALSE
+    }
+  ]
+  name "swarm robot(3)"
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "pneuma_controller"
+}
+Robot {
+  translation 1.8582657527785134 1.5221369640426914 0.021577428617603707
+  rotation 0.008102742617440314 -0.0038668870783654732 0.9999596955609753 2.9104991926866988
+  children [
+    Pen {
+      inkColor 0 1 0
+      inkDensity 1
+    }
+    Camera {
+      translation 0.02 0 0.04
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.5 0 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.01
+          }
+        }
+      ]
+      fieldOfView 1
+      width 640
+      height 320
+      recognition Recognition {
+        maxRange 0.6
+      }
+    }
+    LED {
+      translation -0.01 0 0.04
+      children [
+        PointLight {
+          attenuation 0 0 0.3
+          color 0.6 0 1
+          intensity 0.1
+          on FALSE
+          radius 0.1
+        }
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      color [
+        1 1 1
+        0 1 0
+        1 0.7 0
+        0 1 1
+        0.6 0 1
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 -0.04 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds1"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    DistanceSensor {
+      translation 0.039 -0.027 0
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds3"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.04 0.0224265 0
+      rotation 0 0 1 0.785401
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds4"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 0.04 0
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds2"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    Receiver {
+    }
+    Emitter {
+    }
+    Display {
+      width 100
+      height 100
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+    }
+    Lidar {
+      translation 0 0 0.03
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.7 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.03
+            subdivision 6
+          }
+        }
+      ]
+      fieldOfView 6.28
+      verticalFieldOfView 0.05
+      numberOfLayers 1
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50692.11039173923
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_l"
+        }
+      ]
+      endPoint DEF WHEEL_L Solid {
+        translation -1.647513025060018e-07 0.05499999999998482 7.084508042082267e-08
+        rotation 0.9085673200848172 -0.29538478037304255 0.2953866219006247 1.6665394115174526
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 59197.465595681715
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_r"
+        }
+      ]
+      endPoint DEF WHEEL_R Solid {
+        translation 0 -0.055 0
+        rotation 0.1544743502341696 -0.698617953378867 0.698620519550102 2.83506787796502
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.041
+        radius 0.05
+        subdivision 8
+      }
+      castShadows FALSE
+    }
+  ]
+  name "swarm robot(4)"
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "pneuma_controller"
+}
+Robot {
+  translation 2.0101942213104804 1.561276818490476 0.021859787271203968
+  rotation -0.012909687331484837 -0.0012779533598075597 0.9999158498634838 -2.943261934655212
+  children [
+    Pen {
+      inkColor 0 1 0
+      inkDensity 1
+    }
+    Camera {
+      translation 0.02 0 0.04
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.5 0 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.01
+          }
+        }
+      ]
+      fieldOfView 1
+      width 640
+      height 320
+      recognition Recognition {
+        maxRange 0.6
+      }
+    }
+    LED {
+      translation -0.01 0 0.04
+      children [
+        PointLight {
+          attenuation 0 0 0.3
+          color 0.6 0 1
+          intensity 0.1
+          on FALSE
+          radius 0.1
+        }
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      color [
+        1 1 1
+        0 1 0
+        1 0.7 0
+        0 1 1
+        0.6 0 1
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 -0.04 0
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds1"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    DistanceSensor {
+      translation 0.039 -0.027 0
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds3"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.04 0.0224265 0
+      rotation 0 0 1 0.785401
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds4"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.03 0.04 0
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "ds2"
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      numberOfRays 2
+      aperture 0.5
+    }
+    Receiver {
+    }
+    Emitter {
+    }
+    Display {
+      width 100
+      height 100
+    }
+    InertialUnit {
+      name "imu"
+    }
+    GPS {
+    }
+    Lidar {
+      translation 0 0 0.03
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.7 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.03
+            subdivision 6
+          }
+        }
+      ]
+      fieldOfView 6.28
+      verticalFieldOfView 0.05
+      numberOfLayers 1
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50685.956409881095
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_l"
+        }
+      ]
+      endPoint DEF WHEEL_L Solid {
+        translation -1.5425009111805268e-07 0.05499999999998529 9.148183692585988e-08
+        rotation -0.9406764791741045 0.23992390751884202 -0.23992557206246476 4.651267607710338
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 59188.64934257967
+        axis 0 1 0
+        anchor 0 -0.055 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_r"
+        }
+      ]
+      endPoint DEF WHEEL_R Solid {
+        translation 0 -0.055 0
+        rotation 0.7758303068495392 0.446142282639877 -0.4461439214139647 1.821939013616908
+        children [
+          DEF WHEEL_SHAPE Shape {
+            appearance PBRAppearance {
+              baseColor 0.7 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.022
+            }
+            castShadows FALSE
+          }
+        ]
+        boundingObject USE WHEEL_SHAPE
+        physics Physics {
+        }
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.041
+        radius 0.05
+        subdivision 8
+      }
+      castShadows FALSE
+    }
+  ]
+  name "swarm robot(5)"
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "pneuma_controller"
+}
+Background {
+  skyColor [
+    0.2 0 0.3
+  ]
+  luminosity 0.1
+}
