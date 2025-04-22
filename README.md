@@ -2,6 +2,10 @@
 
 This repository contains a multi-agent swarm robotics simulation implemented using Webots. It demonstrates autonomous coordination among a group of robots to perform distributed exploration, mapping, and role-based task execution using behavior-based control and communication. The robots dynamically assign roles such as **Queen**, **Keeper**, **Scout**, and **Crawler**, and collaborate to identify and investigate areas of interest.
 
+## Project blog
+
+The project can be found here: https://pneumaware.blogspot.com/
+
 ## Features
 
 - Decentralized swarm coordination
